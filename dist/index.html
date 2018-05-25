@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a><img src="http://image.read.duokan.com/mfsv2/download/s010/p01O5K5DzsAZ/2ZODzjwkRQh7l3.png" alt=""></a>
+            <span class="active">书城</span>
+            <span>书架</span>
+            <a><i class="icon iconfont icon-wode"></i></a>
+        </header>
+        <main class='main swiper-container'>
+            <!--书城页面-->
+            <div class="swiper-wrapper">
+                <div id="tab1" class='swiper-slide'>
+                    <div class="content" data-up='上拉加载更多....'></div>
+                </div>
+                <div class='swiper-slide ' id='tab2'>
+                    <!--书架页面-->
+                    <div>
+                        <div class='seek bookrack'>
+                            <a href="tql/sousuo.html">输入书名/作者/关键字<em><i class="icon iconfont icon-fangdajing"></i></em></a>
+                            <b class="btn cut"></b>
+                        </div>
+                        <div class='bookrack_cont '>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="js/lib/require.js"></script>
+    <script>
+        require(['js/main'], function() {
+            require(['index']) //首页入口模块
+        })
+    </script>
+</body>
+
+</html>

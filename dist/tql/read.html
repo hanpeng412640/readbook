@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/read.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="read-wrap">
+
+        <div class="read-main">
+
+        </div>
+        <div class="mask">
+            <div class="mask-top"></div>
+            <div class='mask-middle'></div>
+            <div class="mask-bottom">
+                <div class='mask-chapter'>
+                    <span class='prev-btn'>上一章</span>
+                    <span class='num'>1/2361</span>
+                    <span class='next-btn'>下一章</span>
+                </div>
+                <div class='main-font main-font-s'>
+                    <div class="main-font-t">
+                        <span>字号</span>
+                        <b class='big-btn'>大</b>
+                        <b class='small-btn'>小</b>
+                    </div>
+                    <div class="main-font-b">
+                        <span>背景</span>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                    </div>
+                </div>
+                <footer>
+                    <ul>
+                        <li class='catalog-btn'>目录</li>
+                        <li class='font'>字体</li>
+                        <li class='time'>夜间</li>
+                        <li>下载</li>
+                    </ul>
+
+                </footer>
+            </div>
+        </div>
+        <div class="paging">
+
+        </div>
+
+    </div>
+
+
+</body>
+<script class='main' type='text/x-handlebars-template'>
+    <h3>{{lists.t}}</h3>
+    {{#each lists.p}}
+    <p>{{this}}</p>
+    {{/each}}
+</script>
+<script class='catalogue' type='text/x-handlebars-template'>
+    <div class="catalogue-top">
+        <a href="" class="left"><i class="icon iconfont icon-angle-left"></i></a>
+        <span>目录</span>
+        <a href="" class='right'><i class="icon iconfont icon-shouye"></i></a>
+    </div>
+    <ul>
+        {{#each list}}
+        <li data-id="{{chapter_id}}">{{title}}</li>
+        {{/each}}
+    </ul>
+</script>
+<script src="../js/lib/require.js"></script>
+<script>
+    require(['../js/main.js'], function() {
+        require(['read'])
+    })
+</script>
+
+</html>

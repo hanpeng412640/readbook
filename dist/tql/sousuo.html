@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="serach">
+            <button class='back'><</button>
+            <input type="text" placeholder="搜索">
+            <button class='search-btn'>点击</button>
+        </div>
+        <div class="searchresult">
+
+        </div>
+    </div>
+
+    <script class='searchtext' type='text/x-handlebars-template'>
+        {{#each ads}}
+        <a>{{ad_name}}</a> {{/each}}
+    </script>
+    <script class='searchlist' type='text/x-handlebars-template'>
+        {{#each items}}
+        <dl>
+            <dt> <img src="{{cover}}" alt=""></dt>
+            <dd>
+                <h3>{{title}}</h3>
+                <p>{{intro}}</p>
+            </dd>
+        </dl>
+        {{/each}}
+    </script>
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main.js'], function() {
+            require(['serach'])
+        })
+    </script>
+</body>
+
+</html>

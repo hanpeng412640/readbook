@@ -1,0 +1,21 @@
+<div class="boy-love">
+    <ul>
+        {{#each items}}
+        <li class="one">
+            <a href="javascript:;">
+                <dl>
+                    <dt><img src="{{cover}}"><b>{{allow_free_read}}</b>{{#if finish}}<span>完结</span>{{else}}<span>连载中</span>{{/if}}</dt>
+                    <dd>
+                        <h4>{{title}}</h4>
+                        <h3>{{authors}}</h3>
+                        <p>{{summary}}</p>
+                        <h5>{{#each tags}}
+                            <span>{{this}}</span> {{/each}}
+                        </h5>
+                    </dd>
+                </dl>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

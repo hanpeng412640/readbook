@@ -1,0 +1,1 @@
+define(["jquery","template","getUrl","text!../tql/delite1.html"],function(i,o,e,c){var t=e("activeid");i.getJSON("/book/delite",{activeid:t},function(e){var t=e.item;console.log(t),t.source_id=Math.round(t.source_id/1e4),o(c,t,".wrap"),i(".or").on("click",function(){location.href="read.html"})})});

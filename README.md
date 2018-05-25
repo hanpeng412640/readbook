@@ -21,13 +21,14 @@ npm run dev
 
 # 部分效果图
 
+
 > 首页
-![image](https://hanpeng412640.github.io/bookCitys/img/home.png)
+![image](https://typeofyh.github.io/bookCitys/page/home.png)
 > 搜索页
-![image](https://hanpeng412640.github.io/bookCitys/img/search.png)
+![image](https://typeofyh.github.io/bookCitys/page/search.png)
 > 详情页
-![image](https://thanpeng412640.github.io/bookCitys/img/detail.png)
+![image](https://typeofyh.github.io/bookCitys/page/detail.png)
 > 阅读页
-![image](https://hanpeng412640.github.io/bookCitys/img/read.png)
+![image](https://typeofyh.github.io/bookCitys/page/read.png)
 
  
